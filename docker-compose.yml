@@ -10,7 +10,7 @@ services:
       MYSQL_USER: admin
       MYSQL_PASSWORD: MyDb123@abc
     networks:
-      - mirana
+      - mirana-net
     
   myapp:
     image: mirana/bookstore_api:latest
@@ -21,8 +21,8 @@ services:
     ports:
       - "80:80"
     networks:
-      - mirana
+      - mirana-net
     
   networks:
-      mirana:
+      mirana-net:
         driver: bridge
