@@ -23,6 +23,6 @@ services:
     networks:
       - mirana-net
     
-  networks:
-      mirana-net:
-        driver: bridge
+networks:
+  mirana-net:
+    driver: bridge
